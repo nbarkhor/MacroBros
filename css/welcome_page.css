@@ -80,6 +80,12 @@
 
 }
 
+.littleButton{
+    background-color: transparent;
+    color: black;
+    border-color: none;
+    border: 1px;
+}
 
 .inputfld{
 	font-family: 'Roboto', sans-serif;
