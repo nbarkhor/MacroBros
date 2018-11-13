@@ -16,7 +16,7 @@ function writeUserData() {
 	database.child("Users").child(n).child("Email").set(u)
 	database.child("Users").child(n).child("Name").set(n)
 	database.child("Users").child(n).child("Pass").set(p)
-	window.open("https://nbarkhor.github.io/cs188Project/macrospercent.html");
+	window.open("https://nbarkhor.github.io/cs188Project/macrospercent.html", "_self");
 
   // firebase.database().ref('users/').set({
   //   username: document.getElementById("nameq").text,
