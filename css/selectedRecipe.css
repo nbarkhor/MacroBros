@@ -1,0 +1,39 @@
+.title {
+  width: 311px;
+  height: 22px;
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #273951;
+}
+
+.background {
+  width: 355px;
+  height: 278px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.pic {
+  width: 355px;
+  height: 230px;
+}
+
+.recipename {
+  width: 340px;
+  height: 20px;
+  font-family: AvenirNext;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #3b4859;
+}

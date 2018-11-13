@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Current Recipe</title>
+    <link href="css/selectedRecipe.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+
+  <body>
+  	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBaWjCtp-rM6xxgokeVnFVNnQ1hmhCk7yk",
+	    authDomain: "macrobros-1900f.firebaseapp.com",
+	    databaseURL: "https://macrobros-1900f.firebaseio.com",
+	    projectId: "macrobros-1900f",
+	    storageBucket: "macrobros-1900f.appspot.com",
+	    messagingSenderId: "620817861052"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="index.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+
+	<div class="center">
+    	<h1 class="title">Chicken and Broccoli</h1> 
+
+    	<table class="details">
+			<tr>
+				<td class="background">
+					<br>
+					<img src="c1.jpeg" class="pic">
+					<h5 class="recipename">Chicken breast, broccoli and spring onion&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45min</h5>
+					
+					<!-- image goes here -->
+					<!-- <input class="inputfld" type="text" name="email" placeholder="email"> -->
+				</td>
+			</tr>
+			<tr>
+				<!-- <br> -->
+				<td class="tone">
+					<br>
+					<img src="c2.jpeg" class="center2">
+					<h5 class="center4">Chicken and Brocolli	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30min</h5>
+					<!-- name, cooking time and hear go here -->
+					<!-- <input class="inputfld" type="password" name="password" placeholder="password"> -->
+				</td>
+			</tr>
+			<tr>
+				<td class="tone">
+					<br>
+					<img src="c3.jpg" class="center3">
+					<h5 class="center4">Chicken and Rice Noodles	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60min</h5>
+					
+
+					<!-- image goes here -->
+					<!-- <input class="inputfld" type="text" name="email" placeholder="email"> -->
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+  <table class="bordercol" id="mytable">
+    <tr class="tableheader">
+      <th class="borderheader">Country</th>
+      <th class="borderheader">Capital</th>
+      <th class="borderheader">Answer</th>
+      </tr>
+      <tr>
+        <td class="border" id="pr2__question"></td>
+        <td class="border"> 
+          <form action="">
+        <input type="text" id="pr2__answer" name="Capital" value="" autofocus> 
+      </td>
+        <td class="border">
+          <input type="button" id="pr2__submit" onclick="sendAnswer()" value="See Answer">
+        </form>
+      </td>
+      </tr>
+      <tr>
+        <td class="border">
+        <input type="radio" id="all2" name="filter" value="all" checked>All 
+      </td>
+        <td class="border">
+        <input type="radio" name="filter" value="correctonly">Correct Only
+      </td>
+        <td class="border">
+        <input type="radio" name="filter" value="wrongonly">Wrong Only
+      </td>
+      </tr>
+  </table>
+
+
+  </body>
+
+</html>
