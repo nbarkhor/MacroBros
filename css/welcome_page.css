@@ -22,6 +22,9 @@
     margin-right: auto;
 }
 
+
+
+
 .header{
 	font-family: 'Roboto', sans-serif;
 	position: fixed;
@@ -34,6 +37,20 @@
     color: black;
    	text-align: center;
 }
+
+
+.abovefooter{
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 10;
+    height: 8%;
+    width: 100%;
+    background-color: #E89397;
+    color: white;
+    text-align: center;
+}
+
 .footer{
 	font-family: 'Roboto', sans-serif;
 	position: fixed;
@@ -57,10 +74,15 @@
     border: none;
 }
 
+.thickerFont{
+    font-weight: bold;
+
+}
+
 
 .inputfld{
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 40px;
 	text-align: center;
 	margin: auto;
 	width: 100%;
@@ -68,4 +90,5 @@
     margin-right: auto;
     margin-bottom: 30px;
     border: none;
+    font-weight: bold;
 }
