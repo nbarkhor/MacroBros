@@ -26,7 +26,7 @@
 .title
 {
     color: white;
-    font-size: 40spx;
+    font-size: 40px;
 }
 
 .details{
@@ -88,7 +88,7 @@
 .welcomefooterbtn{
     margin: auto;
     height: 100%;
-    width: 35%;
+    width: 250px;
     font-size: 20px;
     color: white;
     margin-top: 10px;
