@@ -8,6 +8,36 @@
 
 var database = firebase.database().ref();
 
+var recipedb = firebase.database().ref().child('Chicken').child('bread');
+
+function addnewTable(){
+	console.log("T1");
+	recipedb.once('value', function(snapshot){
+	    if(snapshot.exists()){
+	        var content = '';
+
+	        snapshot.forEach(function(data){
+	            var name = data.val().Name;
+	            var time= data.val().Time;
+	            content += '<tr>';
+	            content += '<td>' + name + '</td>'; //column1
+	            content += '<td>' + time + '</td>';//column2
+	            content += '</tr>';
+	        });
+
+	        $('#trial').append(content);
+	    }
+	});
+
+}
+
+
+
+function loadRecipe(){
+
+}
+
+
 function writeUserData() {
 	var u = document.getElementById("emailq").value
 	var p =  document.getElementById("passq").value
