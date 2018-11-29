@@ -12,6 +12,7 @@ function writeUserData() {
 	var u = document.getElementById("emailq").value
 	var p =  document.getElementById("passq").value
 	var n = document.getElementById("nameq").value
+	firebase.auth().createUserWithEmailAndPassword(u, p).then(function() {
 		window.open("macropercent.html", "_self");
 	}).catch(function(err) {
   	 // Handle errors
