@@ -79,11 +79,11 @@ function signIn() {
 	firebase.auth().signInWithEmailAndPassword(u, p).then(function() {
 		window.open("macropercent.html", "_self");
 	})
-	// catch(function(error) {
- //  	// Handle Errors here.
- //  		console.log("This error happened?")
- //  		alert("could not sign in");
-	// });
+	.catch(function(error) {
+  	// Handle Errors here.
+  		console.log("This error happened?")
+  		alert("could not sign in");
+	});
 }
 
 function signOut() {
