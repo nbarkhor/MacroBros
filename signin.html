@@ -32,8 +32,8 @@
 	  };
 	  firebase.initializeApp(config);
 	</script>
-		<script src="jquery/js/jquery-1.9.0.min.js"></script>
-    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+		<!-- <script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script> -->
 	<script src="index.js"></script>
 <div class="header">
  	<h1>Sign In</h1>
@@ -45,12 +45,12 @@
 	<table class="details">
 		<tr>
 			<td>
-				<input class="inputfld" type="text" name="email" placeholder="email">
+				<input class="inputfld" type="text" name="email" placeholder="email" id="emailq">
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<input class="inputfld" type="password" name="password" placeholder="password">
+				<input class="inputfld" type="password" name="password" placeholder="password" id="passq">
 			</td>
 		</tr>
 	</table>
@@ -59,7 +59,7 @@
 	
 </div>
 <div class="footer">
-		<button class="footerbtn"  onclick="window.location.href='macropercent.html'">Next</button>
+		<button class="footerbtn"  onclick="signIn()">Next</button>
 </div>
 
 </body>
