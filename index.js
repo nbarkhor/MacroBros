@@ -9,13 +9,28 @@
 var database = firebase.database().ref();
 
 
-function addnewTable(protein, carb, veg){
-	var recipedb = database.child('Recipes').child(protein).child(carb);
+function addnewTable(){
+	var re = database.child('CURR')
+	console.log("PLEASE")
+	re.once('value', function(snap){
+		var a = snap.val().carbs;
+        var b= snap.val().proteins;
+        var c= snap.val().veggies
+        var recipedb
+        if(b == "Chicken")
+        {
+			recipedb = database.child('Recipes').child(b).child(a);
+        }
+        else
+        {
+        	recipedb = database.child('Recipes').child(b);
+        }
+        // var recipedb = database.child('Recipes').child(b);
+        // console.log(b)
+        // console.log(a)
 
-	console.log("T1");
-		var table = document.getElementById('trial');
-		var content = ``;
-		recipedb.once('value', function(snapshot){
+        recipedb.once('value', function(snapshot){
+        	var content =``
 			snapshot.forEach(function(childSnapshot) {
 				// var row = table.insertRow(0);
 				// var name = row.insertCell(0);
@@ -33,13 +48,43 @@ function addnewTable(protein, carb, veg){
 					<img src="img/${p}.jpg" class="pic">
 					<p class="recipename">${n}</p>
 					<p class="recipetime">takes around ${t}</p> </a></td></tr>`
+
 			});
 			console.log(content)
-			
-		$('#trial').append(content);
-		});
+							$('#trial').append(content);
 
-		console.log("t3")
+		});
+	});
+	// var recipedb = database.child('Recipes').child(protein).child(carb);
+
+	// console.log("T1");
+	// 	var table = document.getElementById('trial');
+	// 	var content = ``;
+	// 	recipedb.once('value', function(snapshot){
+	// 		snapshot.forEach(function(childSnapshot) {
+	// 			// var row = table.insertRow(0);
+	// 			// var name = row.insertCell(0);
+	// 			// var time = row.insertCell(1);
+	// 		    var childKey = childSnapshot.key;
+	// 		    // var childData = childSnapshot.val();
+	// 		    // console.log(childSnapshot.val().Name)
+	//             var n = childSnapshot.val().Name;
+	//             var t= childSnapshot.val().Time;
+	//             var p= childSnapshot.val().Picture
+	//             var q = childSnapshot.val().Link
+	//             // name.innerHTML = n; 
+	//             // time.innerHTML = t;
+	//             content+= `	<tr> <td class="background"> <a href="${q}">
+	// 				<img src="img/${p}.jpg" class="pic">
+	// 				<p class="recipename">${n}</p>
+	// 				<p class="recipetime">takes around ${t}</p> </a></td></tr>`
+	// 		});
+	// 		console.log(content)
+			
+	// 	$('#trial').append(content);
+	// 	});
+
+	// 	console.log("t3")
 
 }
 
@@ -80,17 +125,21 @@ function signOut() {
 }
 
 function saveIngredients() {
+
 	p = document.getElementById("pickprotein");
 	protein = p.options[p.selectedIndex].text;
-	console.log(protein);
+	// console.log(protein);
 	c = document.getElementById("pickcarb");
 	carb = c.options[c.selectedIndex].text;
 	v = document.getElementById("pickveg");
 	veg = v.options[v.selectedIndex].text;
-	window.open("recipes.html", "_self");
 firebase.database().ref('CURR').set({
     carbs: carb,
     proteins: protein,
     veggies : veg
-  });	// addnewTable(protein, carb, veg);
+  });
+  	// addnewTable(protein, carb, veg);
+	// addnewTable();
+	window.open("recipes.html", "_self");
+
 }
