@@ -13,22 +13,28 @@ var recipedb = firebase.database().ref().child('Recipes').child('Chicken').child
 function addnewTable(){
 	console.log("T1");
 		var table = document.getElementById('trial');
+		var content = ``;
 		recipedb.once('value', function(snapshot){
-			var content = '';
 			snapshot.forEach(function(childSnapshot) {
-				var row = table.insertRow(0);
-				var name = row.insertCell(0);
-				var time = row.insertCell(1);
+				// var row = table.insertRow(0);
+				// var name = row.insertCell(0);
+				// var time = row.insertCell(1);
 			    var childKey = childSnapshot.key;
 			    // var childData = childSnapshot.val();
 			    // console.log(childSnapshot.val().Name)
 	            var n = childSnapshot.val().Name;
 	            var t= childSnapshot.val().Time;
-	            name.innerHTML = n; 
-	            time.innerHTML = t;
+	            var p= childSnapshot.val().Picture
+	            // name.innerHTML = n; 
+	            // time.innerHTML = t;
+	            content+= `	<tr> <td class="background"> <a href="selectedRecipe.html"> <br>
+					<img src="img/${p}.jpg" class="pic">
+					<h5 class="recipename">${n}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${t}</h5>
+					<!-- <a href="http://example.com"> --></a></td></tr>`
 			});
 			console.log(content)
 			
+		$('#trial').append(content);
 
 		    // if(snapshot.exists()){
 		    //     var content = '';
@@ -50,6 +56,7 @@ function addnewTable(){
 
 		    // }
 		});
+
 		console.log("t3")
 
 }
