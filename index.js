@@ -14,24 +14,21 @@ function addnewTable(){
 	console.log("T1");
 		var table = document.getElementById('trial');
 		recipedb.once('value', function(snapshot){
-			var content = ``;
+			var content = '';
 			snapshot.forEach(function(childSnapshot) {
-			   
+				var row = table.insertRow(0);
+				var name = row.insertCell(0);
+				var time = row.insertCell(1);
 			    var childKey = childSnapshot.key;
 			    // var childData = childSnapshot.val();
 			    // console.log(childSnapshot.val().Name)
-	            var name = childSnapshot.val().Name;
-	            var time= childSnapshot.val().Time;
-	            
-	            content += `<tr>`;
-	            content += `<td>  ${name}  </td><td> + ${time}</td></tr>`; //column1
-	            // content += '<td>' + time + '</td>';//column2
-	            // content += '</tr>';
-
+	            var n = childSnapshot.val().Name;
+	            var t= childSnapshot.val().Time;
+	            name.innerHTML = n; 
+	            time.innerHTML = t;
 			});
-			// console.log(content)
-			$('#trial').append(content);
-			// table.prepend(content);
+			console.log(content)
+			
 
 		    // if(snapshot.exists()){
 		    //     var content = '';
