@@ -12,6 +12,28 @@
 </head>
 
 <body>
+	<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
+		<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBaWjCtp-rM6xxgokeVnFVNnQ1hmhCk7yk",
+	    authDomain: "macrobros-1900f.firebaseapp.com",
+	    databaseURL: "https://macrobros-1900f.firebaseio.com",
+	    projectId: "macrobros-1900f",
+	    storageBucket: "macrobros-1900f.appspot.com",
+	    messagingSenderId: "620817861052"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+<script src="index.js"></script>
 <div class="header">
  	<h1>Your Ingredients</h1>
 </div>
@@ -22,7 +44,7 @@
 	<table class="details">
 		<tr>
 			<td>
-				<select class="inputfld" name="Carb Base">
+				<select class="inputfld" name="Carb Base" id="pickcarb">
 				  <option>Carb Base</option>
 				  <option>White Rice</option>
 				  <option>Brown Rice</option>
@@ -35,7 +57,7 @@
 		</tr>
 		<tr>
 			<td>
-				<select class="inputfld" text-align="center">
+				<select class="inputfld" text-align="center" id="pickprotein">
 				  <option>Protein Base</option>
 				  <option>Chicken</option>
 				  <option>Pork</option>
@@ -49,13 +71,12 @@
 		</tr>
 		<tr>
 			<td>
-				<select class="inputfld" text-align="center">
+				<select class="inputfld" text-align="center" id="pickveg">
 				  <option>Side Vegetables</option>
 				  <option>Broccoli</option>
 				  <option>Carrot</option>
-				  <option>Lettuce</option>
-				  <option>Onion</option>
-				  <option>Cucumber</option>
+				  <option>Mushrooms</option>
+				  <option>Tomatoes</option>
 				</select>
 				<!-- <input class="inputfld" type="text" name="fat" placeholder="side vegetables"> -->
 			</td>
@@ -66,7 +87,7 @@
 	
 </div>
 <div class="footer">
-		<button button onclick="window.location.href='recipes.html'" class="footerbtn">Next</button>
+		<button button onclick="saveIngredients()" class="footerbtn">Next</button>
 </div>
 
 </body>

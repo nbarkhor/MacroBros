@@ -8,9 +8,10 @@
 
 var database = firebase.database().ref();
 
-var recipedb = firebase.database().ref().child('Recipes').child('Chicken').child('Bread');
 
-function addnewTable(){
+function addnewTable(protein, carb, veg){
+	var recipedb = database.child('Recipes').child(protein).child(carb);
+
 	console.log("T1");
 		var table = document.getElementById('trial');
 		var content = ``;
@@ -35,38 +36,15 @@ function addnewTable(){
 			console.log(content)
 			
 		$('#trial').append(content);
-
-		    // if(snapshot.exists()){
-		    //     var content = '';
-		    //     console.log("T2")
-		    //     snapshot.forEach(function(data){
-		    //         var name = data.val().Name;
-		    //         var time= data.val().Time;
-		    //         content += '<tr>';
-		    //         content += '<td>' + name + '</td>'; //column1
-		    //         content += '<td>' + time + '</td>';//column2
-		    //         content += '</tr>';
-		    //     });
-
-
-		    //     $('#trial').append(content);
-		    // }
-		    // else{
-		    // 	console.log("T21")
-
-		    // }
 		});
 
 		console.log("t3")
 
 }
 
-
-
 function loadRecipe(){
 
 }
-
 
 function writeUserData() {
 	var u = document.getElementById("emailq").value
@@ -79,7 +57,6 @@ function writeUserData() {
   	 alert("could not make new user");
  	});
 }
-
 
 function signIn() {
 	var u = document.getElementById("emailq").value
@@ -99,4 +76,16 @@ function signOut() {
 	}).catch(function(error) {
   // An error happened.
 });
+}
+
+function saveIngredients() {
+	p = document.getElementById("pickprotein");
+	protein = p.options[p.selectedIndex].text;
+	console.log(protein);
+	c = document.getElementById("pickcarb");
+	carb = c.options[c.selectedIndex].text;
+	v = document.getElementById("pickveg");
+	veg = v.options[v.selectedIndex].text;
+	window.open("recipes.html", "_self");
+	addnewTable(protein, carb, veg);
 }
