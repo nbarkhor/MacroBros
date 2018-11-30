@@ -42,6 +42,20 @@ a {
    text-decoration:none;
 }
 
+.header{
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+    left: 0;
+    top: 0;
+    height: 15;
+    width: 100%;
+    padding-top: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 .recipename {
   width: 340px;
   height: 20px;
@@ -96,17 +110,17 @@ a {
 }
 
 .footer{
-  margin-top: 20px;
   font-family: 'Roboto', sans-serif;
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
-  height: 5%;
+  height: 8%;
   width: 100%;
   background-color: #E89397;
   color: white;
   text-align: center;
 }
+
 .footerbtn{
   margin: auto;
   height: 100%;

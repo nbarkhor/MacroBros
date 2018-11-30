@@ -63,13 +63,23 @@
     text-align: center;
     padding-bottom: 10px;
 }
-
+.welcomefooter{
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    background-color: #E89397;
+    color: white;
+    text-align: center;
+}
 .footer{
 	font-family: 'Roboto', sans-serif;
 	position: fixed;
    	left: 0;
     bottom: 0;
-    height: 15%;
+    height: 8%;
     width: 100%;
     background-color: #E89397;
     color: white;
