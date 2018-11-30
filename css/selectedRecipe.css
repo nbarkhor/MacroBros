@@ -38,11 +38,14 @@
   margin-right: auto;
 }
 
+a {
+   text-decoration:none;
+}
 
 .recipename {
   width: 340px;
   height: 20px;
-  font-family: AvenirNext;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -51,7 +54,19 @@
   letter-spacing: normal;
   color: #3b4859;
   font-weight: bold;
-  text-indent: 15px;
+  text-align: center
+}
+
+.recipetime {
+  width: 340px;
+  height: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #3b4859;
+  text-align: center
 }
 
 .center {

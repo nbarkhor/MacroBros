@@ -27,10 +27,10 @@ function addnewTable(){
 	            var p= childSnapshot.val().Picture
 	            // name.innerHTML = n; 
 	            // time.innerHTML = t;
-	            content+= `	<tr> <td class="background"> <a href="selectedRecipe.html"> <br>
+	            content+= `	<tr> <td class="background"> <a href="selectedRecipe.html">
 					<img src="img/${p}.jpg" class="pic">
-					<h5 class="recipename">${n}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${t}</h5>
-					<!-- <a href="http://example.com"> --></a></td></tr>`
+					<p class="recipename">${n}</p>
+					<p class="recipetime">takes around ${t}</p> </a></td></tr>`
 			});
 			console.log(content)
 			

@@ -169,6 +169,8 @@ img {
     border: 2px; /* Green */
     transition-duration: 0.4s;
     height: 50px;
+    width: 250px;
+    font-size: 16px;
     border-radius: 25px;
 }
 .buttonadd:hover {
