@@ -88,5 +88,9 @@ function saveIngredients() {
 	v = document.getElementById("pickveg");
 	veg = v.options[v.selectedIndex].text;
 	window.open("recipes.html", "_self");
-	addnewTable(protein, carb, veg);
+firebase.database().ref('CURR').set({
+    carbs: carb,
+    proteins: protein,
+    veggies : veg
+  });	// addnewTable(protein, carb, veg);
 }
