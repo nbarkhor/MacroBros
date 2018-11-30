@@ -26,6 +26,15 @@
   
 }
 
+.backgroundrecipe {
+  width: 355px;
+  height: 325px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  
+}
+
 .pic {
   width: 355px;
   height: 230px;

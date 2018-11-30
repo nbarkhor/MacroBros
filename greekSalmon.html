@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Current Recipe</title>
+    <link href="css/selectedRecipe.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBaWjCtp-rM6xxgokeVnFVNnQ1hmhCk7yk",
+	    authDomain: "macrobros-1900f.firebaseapp.com",
+	    databaseURL: "https://macrobros-1900f.firebaseio.com",
+	    projectId: "macrobros-1900f",
+	    storageBucket: "macrobros-1900f.appspot.com",
+	    messagingSenderId: "620817861052"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="index.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    
+
+<div class="header">
+ 	
+ 	<!-- <ul class="shrey"> -->
+ 		<h1>Greek Marinated Salmon</h1>
+ 		 
+ 		 <br>
+</div>
+
+	<div class="centerRecipe">
+		<br>
+		<br><br><br><br><br><br><br>
+		<button onclick="history.go(-1);"><i class="fas fa-chevron-left"></i></button> 
+    	<table class="details">
+			<tr>
+				<td class="backgroundrecipe">
+				
+					<img src="greekSalmon/step1.jpg" class="pic">
+					<p class="recipetime">Ingredients: 1 1/2 lb fresh salmon,
+2 tbsp Olive Oil,
+1 tsp lemon zest,
+2 tbsp lemon juice,
+2 cloves of garlic,
+1 tsp salt,
+1/2 tsp fresh dill,
+1/2 tsp dried oregano,
+1/2 tsp crushed red pepper,
+1/2 tsp sumac</p>
+					
+				</td>
+			</tr>
+			
+			<tr>
+				<td class="backgroundrecipe">
+					
+					<img src="greekSalmon/step2.jpg" class="pic">
+					<p class="recipetime">Mix together the olive oil, lemon zest, the juice of the lemon, 2 cloves of garlic, the salt, fresh dill, dried oregano, crushed red pepper and sumac.
+					</p>
+				
+				</td>
+			</tr>
+
+			<tr>
+				<td class="backgroundrecipe">
+					
+					<img src="greekSalmon/step3.jpg" class="pic">
+					<p class="recipetime">Place the salmon fillet in a zip lock bag and pour the mixed marinade over the salmon. Lock the bag and refrigerate to allow the fish to marinade for about 20-30 minutes.
+
+					</p>
+				
+				</td>
+			</tr>
+
+			<tr>
+				<td class="backgroundrecipe">
+					
+					<img src="greekSalmon/step4.jpg" class="pic">
+					<p class="recipetime">Once marinated, place the fish on a foil lined baking sheet skin-side down and bake in a 400F oven for about 15-20 minutes. Don’t forget to pour over all the marinade onto the fish.
+					</p>
+				
+				</td>
+			</tr>
+
+			<tr>
+				<td class="background">
+					
+					<img src="greekSalmon/step5.jpg" class="pic">
+					<p class="recipetime">Serve hot with some greek salad and some cool Tzatziki Sauce over the top….yummm!
+
+					</p>
+				
+				</td>
+			</tr>
+		</table>
+
+
+
+		<br> <br> <br> 
+		<div class="footer"> 		
+			<button button onclick="window.location.href='pickingredient.html'" class="footerbtn">Done</button>
+		</div>
+
+	</div>
+
+
+	
+
+  </body>
+
+
+</html>

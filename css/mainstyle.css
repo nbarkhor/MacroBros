@@ -6,6 +6,12 @@
     margin-top: 150px;
 }
 
+.pic { 
+    height: 100px; 
+    width: 200px; 
+    overflow: hidden; 
+}
+
 .littleButton{
     background-color: transparent;
     color: black;
