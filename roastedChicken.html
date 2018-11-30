@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Current Recipe</title>
+    <link href="css/selectedRecipe.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBaWjCtp-rM6xxgokeVnFVNnQ1hmhCk7yk",
+	    authDomain: "macrobros-1900f.firebaseapp.com",
+	    databaseURL: "https://macrobros-1900f.firebaseio.com",
+	    projectId: "macrobros-1900f",
+	    storageBucket: "macrobros-1900f.appspot.com",
+	    messagingSenderId: "620817861052"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="index.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    
+
+<div class="header">
+ 	
+ 	<!-- <ul class="shrey"> -->
+ 		<h1>Chicken and Broccoli</h1>
+ 		 
+ 		 <br>
+</div>
+
+	<div class="centerRecipe">
+		<br>
+		<br><br><br><br><br><br><br>
+		<button onclick="history.go(-1);"><i class="fas fa-chevron-left"></i></button> 
+    	<table class="details">
+			<tr>
+				<td class="background">
+				
+					<img src="img/chickenandbroccoli/step1.jpg" class="pic">
+					<p class="recipetime">Chicken breast, broccoli and spring onion</p>
+					
+				</td>
+			</tr>
+			<tr>
+				<!-- <br> -->
+				<td class="background">
+					
+					<img src="img/chickenandbroccoli/step2.jpg" class="pic">
+					<p class="recipetime">Wash and chop the ingredients</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="background">
+					
+					<img src="img/chickenandbroccoli/step3.jpg" class="pic">
+					<p class="recipetime">Put it in the oven, your meal will be ready</p>
+				
+				</td>
+			</tr>
+		</table>
+
+
+
+
+		<br> <br> <br> 
+		<div class="footer"> 		
+			<button button onclick="window.location.href='pickingredient.html'" class="footerbtn">Done</button>
+		</div>
+
+	</div>
+
+
+	
+
+  </body>
+
+
+</html>
