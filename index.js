@@ -30,7 +30,8 @@ function addnewTable(){
 
 			});
 			// console.log(content)
-			table.prepend(content);
+			$('#trial').append(content);
+			// table.prepend(content);
 
 		    // if(snapshot.exists()){
 		    //     var content = '';
