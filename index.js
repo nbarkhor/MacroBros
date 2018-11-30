@@ -28,7 +28,7 @@ function addnewTable(){
 
 			});
 			console.log(content)
-			table.prepend(content);
+			table.prepend(append);
 
 		    // if(snapshot.exists()){
 		    //     var content = '';
