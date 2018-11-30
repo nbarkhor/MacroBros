@@ -26,9 +26,10 @@ function addnewTable(protein, carb, veg){
 	            var n = childSnapshot.val().Name;
 	            var t= childSnapshot.val().Time;
 	            var p= childSnapshot.val().Picture
+	            var q = childSnapshot.val().Link
 	            // name.innerHTML = n; 
 	            // time.innerHTML = t;
-	            content+= `	<tr> <td class="background"> <a href="selectedRecipe.html">
+	            content+= `	<tr> <td class="background"> <a href="${q}">
 					<img src="img/${p}.jpg" class="pic">
 					<p class="recipename">${n}</p>
 					<p class="recipetime">takes around ${t}</p> </a></td></tr>`
