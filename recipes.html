@@ -25,13 +25,12 @@
 	  };
 	  firebase.initializeApp(config);
 	</script>
-	<script src="http://lib/jquery.min.js"></script>
-<script src="http://lib/jquery.plugin.js"></script>
-	<script language="JavaScript" type="text/javascript" src="http:///js/jquery-1.2.6.min.js"></script>
+	<!-- <script src="http://lib/jquery.min.js"></script>
+ 	<script language="JavaScript" type="text/javascript" src="http:///js/jquery-1.2.6.min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="http:///js/jquery-ui-personalized-1.5.2.packed.js"></script>
 	<script language="JavaScript" type="text/javascript" src="http:///js/sprinkle.js"></script>
 	<script src="http://jquery/js/jquery-1.9.0.min.js"></script>
-    <script src="http://jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="http://jquery/js/jquery-ui-1.10.0.custom.min.js"></script> -->
 	<script src="index.js"></script>
 
 <div class="header">
@@ -41,12 +40,7 @@
  		 <button type="button" class="buttonadd" onclick="addnewTable()">Additional Ingredients</button>
  		 <br>
 </div>
- <!-- <p align="left"></p> -->
- 	<!-- <p align="right"><button type="button" align="right">Additional Ingredients</button></p> </h1>  -->
 
-
-
-<!-- "window.location.href='recipesExtra.html'" -->
 
 
 </div>
@@ -129,7 +123,7 @@
 <!-- <div class="footer">
 		<button class="footerbtn">Next</button>
 </div> -->
-<script>
+<!-- <script>
 	var recipedb = firebase.database().ref().child('Recipes').child('Chicken').child('Bread');
 
 	function addnewTable(){
@@ -151,34 +145,11 @@
 			console.log(content)
 			$('#trial').prepend(content);
 
-		    // if(snapshot.exists()){
-		    //     var content = '';
-		    //     console.log("T2")
-		    //     snapshot.forEach(function(data){
-		    //         var name = data.val().Name;
-		    //         var time= data.val().Time;
-		    //         content += '<tr>';
-		    //         content += '<td>' + name + '</td>'; //column1
-		    //         content += '<td>' + time + '</td>';//column2
-		    //         content += '</tr>';
-		    //     });
 
-
-		    //     $('#trial').append(content);
-		    // }
-		    // else{
-		    // 	console.log("T21")
-
-		    // }
 		});
 		console.log("t3")
-
 }
-
-
-
-
-</script>
+</script> -->
 	<script src="index.js">require('index.js')</script>
 
 </body>

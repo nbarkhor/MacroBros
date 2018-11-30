@@ -12,6 +12,7 @@ var recipedb = firebase.database().ref().child('Recipes').child('Chicken').child
 
 function addnewTable(){
 	console.log("T1");
+		var table = document.getElementById('trial');
 		recipedb.once('value', function(snapshot){
 			var content = '';
 			snapshot.forEach(function(childSnapshot) {
@@ -27,7 +28,7 @@ function addnewTable(){
 
 			});
 			console.log(content)
-			$('#trial').prepend(content);
+			table.prepend(content);
 
 		    // if(snapshot.exists()){
 		    //     var content = '';
@@ -78,8 +79,7 @@ function signIn() {
 	var p = document.getElementById("passq").value
 	firebase.auth().signInWithEmailAndPassword(u, p).then(function() {
 		window.open("macropercent.html", "_self");
-	})
-	.catch(function(error) {
+	}).catch(function(error) {
   	// Handle Errors here.
   		console.log("This error happened?")
   		alert("could not sign in");
