@@ -18,7 +18,7 @@ function addnewTable(){
         var c= snap.val().veggies
         var recipedb
         console.log(b);
-        if(b == "Chicken")
+        if(b == "Chicken" || b == "Salmon")
         {
         	console.log("hihi");
 			recipedb = database.child('Recipes').child(b).child(a);
