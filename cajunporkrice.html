@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Current Recipe</title>
+    <link href="css/selectedRecipe.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBaWjCtp-rM6xxgokeVnFVNnQ1hmhCk7yk",
+	    authDomain: "macrobros-1900f.firebaseapp.com",
+	    databaseURL: "https://macrobros-1900f.firebaseio.com",
+	    projectId: "macrobros-1900f",
+	    storageBucket: "macrobros-1900f.appspot.com",
+	    messagingSenderId: "620817861052"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="index.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    
+
+<div class="header">
+ 	
+ 		<h1>Pork Fried Rice</h1>
+ 		 
+ 		 <br>
+</div>
+
+	<div class="centerRecipe">
+		<br>
+		<br><br><br><br><br><br><br>
+		<button onclick="history.go(-1);"><i class="fas fa-chevron-left"></i></button> 
+    	<table class="details">
+			<tr>
+				<td class="background">
+				
+					<img src="Pork/PR11.jpg" class="pic">
+					<p class="recipetime">Ingredients: Pork Chops, tomatoes, onion, cellery, chicken broth, green peppers, garlic, rice, soy sauce, cumin</p>
+
+				</td>
+			</tr>
+			<tr>
+				<!-- <br> -->
+				<td class="backgroundrecipe">
+					
+					<img src="Pork/PR12.jpg" class="pic">
+					<p class="recipetime">Mix cumin and chili powder; sprinkle pork chops with 2 teaspoon spice mixture. Transfer to a 4-qt. slow cooker.</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="backgroundrecipe">
+					
+					<img src="Pork/PR13.jpg" class="pic">
+					<p class="recipetime">In a small bowl, mix tomatoes, onion, celery, carrot, garlic, hot sauce, salt and remaining spice mixture; pour over chops. Cook, covered, on low 4-5 hours or until meat is tender.
+					</p>
+				
+				</td>
+			</tr>
+
+			<tr>
+				<td class="backgroundrecipe">
+					
+					<img src="Pork/PR14.jpg" class="pic">
+					<p class="recipetime">Stir in rice and chicken broth, breaking up pork into pieces. Add green pepper and cook for 5-7 minutes or until crisp-tender. Serve with pork mixture.
+					</p>
+				
+				</td>
+			</tr>
+
+<!-- 			<tr>
+				<td class="background">
+					
+					<img src="Pork/PR15.jpg" class="pic">
+					<p class="recipetime">Pour the eggs on the rice and cook until done. Garnish with green onions!
+					</p>
+				
+				</td>
+			</tr> -->
+		</table>
+
+
+
+
+		<br> <br> <br> 
+		<div class="footer"> 		
+			<button button onclick="window.location.href='pickingredient.html'" class="footerbtn">Done</button>
+		</div>
+
+	</div>
+
+
+	
+
+  </body>
+
+
+</html>

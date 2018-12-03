@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Current Recipe</title>
+    <link href="css/selectedRecipe.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBaWjCtp-rM6xxgokeVnFVNnQ1hmhCk7yk",
+	    authDomain: "macrobros-1900f.firebaseapp.com",
+	    databaseURL: "https://macrobros-1900f.firebaseio.com",
+	    projectId: "macrobros-1900f",
+	    storageBucket: "macrobros-1900f.appspot.com",
+	    messagingSenderId: "620817861052"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="index.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    
+
+<div class="header">
+ 	
+ 		<h1>Pork Fried Rice</h1>
+ 		 
+ 		 <br>
+</div>
+
+	<div class="centerRecipe">
+		<br>
+		<br><br><br><br><br><br><br>
+		<button onclick="history.go(-1);"><i class="fas fa-chevron-left"></i></button> 
+    	<table class="details">
+			<tr>
+				<td class="background">
+				
+					<img src="Pork/PR21.jpg" class="pic">
+					<p class="recipetime">Ingredients: Pork Chops, mushrooms, shallot, green onions, garlic, ginger, rice, soy sauce, eggs</p>
+					
+				</td>
+			</tr>
+			<tr>
+				<!-- <br> -->
+				<td class="backgroundrecipe">
+					
+					<img src="Pork/PR22.jpg" class="pic">
+					<p class="recipetime">Heat oild and season pork chops with salt and black pepper. When cooked through, chop the pork into bite-size pieces and set aside.</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="backgroundrecipe">
+					
+					<img src="Pork/PR23.jpg" class="pic">
+					<p class="recipetime">Now use oil to cook the mushrooms for 2 minutes. Add the shallot, green onions, garlic and ginger and cook for 5 minutes.
+					</p>
+				
+				</td>
+			</tr>
+
+			<tr>
+				<td class="backgroundrecipe">
+					
+					<img src="Pork/PR24.jpg" class="pic">
+					<p class="recipetime">Add the chopped pork, rice, soy sauce, hoisin sauce and thawed peas and stir to combine.
+					</p>
+				
+				</td>
+			</tr>
+
+			<tr>
+				<td class="background">
+					
+					<img src="Pork/PR25.jpg" class="pic">
+					<p class="recipetime">Pour the eggs on the rice and cook until done. Garnish with green onions!
+					</p>
+				
+				</td>
+			</tr>
+		</table>
+
+
+
+
+		<br> <br> <br> 
+		<div class="footer"> 		
+			<button button onclick="window.location.href='pickingredient.html'" class="footerbtn">Done</button>
+		</div>
+
+	</div>
+
+
+	
+
+  </body>
+
+
+</html>
