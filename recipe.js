@@ -45,12 +45,13 @@ function addnewTable(){
 	            var t= childSnapshot.val().Time;
 	            var p= childSnapshot.val().Picture
 	            var q = childSnapshot.val().Link
+	            var m = childSnapshot.val().MP
 	            // name.innerHTML = n; 
 	            // time.innerHTML = t;
 	            content+= `	<tr> <td class="background"> <a href="${q}">
 					<img src="img/${p}.jpg" class="pic">
 					<p class="recipename">${n}</p>
-					<p class="recipetime">takes around ${t}</p> </a></td></tr>`
+					<p class="recipetime">takes around ${t}</p><p class="recipetime">Macro Style: ${m}</p> </a></td></tr> `
 
 			});
 			console.log(content)
