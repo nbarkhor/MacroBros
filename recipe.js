@@ -16,7 +16,8 @@ function addnewTable(){
 		console.log(snap.val().ONE.MP)
 		var a = snap.val().TWO.carbs;
         var b= snap.val().TWO.proteins;
-        var c= snap.val().TWO.veggies
+        var c= snap.val().TWO.veggies;
+        var mymacro = snap.val().ONE.MP;
         var recipedb
         console.log(b);
         if(b == "Chicken" || b == "Salmon" || b == "Pork")
@@ -47,12 +48,18 @@ function addnewTable(){
 	            var p= childSnapshot.val().Picture
 	            var q = childSnapshot.val().Link
 	            var m = childSnapshot.val().MP
+	           	if(m == mymacro) {
+	           		var col = "style='color:green;'";
+	           	}
+	           	else {
+	           		var col = "style='color:black;'";
+	           	}
 	            // name.innerHTML = n; 
 	            // time.innerHTML = t;
 	            content+= `	<tr> <td class="background"> <a href="${q}">
 					<img src="img/${p}.jpg" class="pic">
-					<p class="recipename">${n}</p> <br/>
-					<p class="recipemaker">takes around ${t} <br\><br\> Macro Style: ${m}</p> </a></td></tr> `
+					<p class="recipename">${n}</p> 
+					<p class="recipemaker" ${col}>takes around ${t} <br\><br\> Macro Style: ${m}</p> </a></td></tr> `
 
 			});
 			console.log(content)
