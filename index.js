@@ -133,7 +133,7 @@ function saveIngredients() {
 	carb = c.options[c.selectedIndex].text;
 	v = document.getElementById("pickveg");
 	veg = v.options[v.selectedIndex].text;
-firebase.database().ref('CURR').set({
+firebase.database().ref('CURR').child("TWO").set({
     carbs: carb,
     proteins: protein,
     veggies : veg
@@ -142,4 +142,28 @@ firebase.database().ref('CURR').set({
 	// addnewTable();
 	window.open("recipes.html", "_self");
 
+}
+
+
+function wl(){
+	firebase.database().ref('CURR').child('ONE').set({
+    MP: "Weight Loss"
+  });
+	window.open("pickingredient.html", "_self");
+	// window.location.href='pickingredient.html'
+}
+
+function mt(){
+	firebase.database().ref('CURR').child('ONE').set({
+    MP: "Maintenance"
+  });
+	window.open("pickingredient.html", "_self");
+	// window.location.href='pickingredient.html'
+}
+function mg(){
+	firebase.database().ref('CURR').child('ONE').set({
+    MP: "Muscle Gain"
+  });
+	window.open("pickingredient.html", "_self");
+	// window.location.href='pickingredient.html'
 }

@@ -12,6 +12,27 @@
 </head>
 
 <body>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
+		<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBaWjCtp-rM6xxgokeVnFVNnQ1hmhCk7yk",
+	    authDomain: "macrobros-1900f.firebaseapp.com",
+	    databaseURL: "https://macrobros-1900f.firebaseio.com",
+	    projectId: "macrobros-1900f",
+	    storageBucket: "macrobros-1900f.appspot.com",
+	    messagingSenderId: "620817861052"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+<script src="index.js"></script>
 <div class="header">
  	<h1>Macronutrient Percentages</h1>
 </div>
@@ -20,13 +41,13 @@
 	<h3 class="paragraph">The values are given in percentages of your food intake</h3>
 	<p class="paragraph">Pick from suggested macros or customize it</p>
 	<p class="paragraph">For weight loss: </p>
-	<input type="image" src="img/weightloss.png" name="saveForm" class="piechart" onclick="window.location.href='pickingredient.html'"/>
+	<input type="image" src="img/weightloss.png" name="saveForm" class="piechart" onclick="wl()"/>
 
 	<p class="paragraph">For muscle gain: </p>
-	<input type="image" src="img/musclegain.png" name="saveForm" class="piechart" onclick="window.location.href='pickingredient.html'"/>
+	<input type="image" src="img/musclegain.png" name="saveForm" class="piechart" onclick="mg()"/>
 
 	<p class="paragraph">For maintenance: </p>
-	<input type="image" src="img/maintenance.png" name="saveForm" class="piechart" onclick="window.location.href='pickingredient.html'"/>
+	<input type="image" src="img/maintenance.png" name="saveForm" class="piechart" onclick="mt()"/>
 
 	<p class="paragraph">For custom input: </p>
 

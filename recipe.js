@@ -13,9 +13,10 @@ function addnewTable(){
 	var re = database.child('CURR')
 	console.log("PLEASE")
 	re.once('value', function(snap){
-		var a = snap.val().carbs;
-        var b= snap.val().proteins;
-        var c= snap.val().veggies
+		console.log(snap.val().ONE.MP)
+		var a = snap.val().TWO.carbs;
+        var b= snap.val().TWO.proteins;
+        var c= snap.val().TWO.veggies
         var recipedb
         console.log(b);
         if(b == "Chicken" || b == "Salmon" || b == "Pork")
