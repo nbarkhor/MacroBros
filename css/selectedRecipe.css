@@ -92,6 +92,18 @@ a {
   text-align: center
 }
 
+.recipemaker {
+  width: 340px;
+  height: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #3b4859;
+  text-align: center
+}
+
 .center {
   margin: auto;
   width: 99%;
