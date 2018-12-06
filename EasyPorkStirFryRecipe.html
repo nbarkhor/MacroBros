@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Current Recipe</title>
+    <link href="css/selectedRecipe.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBaWjCtp-rM6xxgokeVnFVNnQ1hmhCk7yk",
+	    authDomain: "macrobros-1900f.firebaseapp.com",
+	    databaseURL: "https://macrobros-1900f.firebaseio.com",
+	    projectId: "macrobros-1900f",
+	    storageBucket: "macrobros-1900f.appspot.com",
+	    messagingSenderId: "620817861052"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script src="index.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    
+
+<div class="header">
+ 	
+ 	<!-- <ul class="shrey"> -->
+ 		<h1>Roast Pork and Vegetables</h1>
+ 		 
+ 		 <br>
+</div>
+
+	<div class="centerRecipe">
+		<br>
+		<br><br><br><br><br><br><br>
+		<button onclick="history.go(-1);"><i class="fas fa-chevron-left"></i></button> 
+    	<table class="details">
+			<tr>
+				<td class="background">
+				
+					<img src="img/easy-pork-stir-fry-recipe-600x900.jpg" class="pic">
+					<p class="recipetime">Easy Pork Stir Fry Recipe</p>
+					
+				</td>
+			</tr>
+			<tr>
+				<!-- <br> -->
+				<td class="background">
+					
+					<img src="img/porkPrepared.jpg" class="pic">
+					<p class="recipetime">Ingredients: 3/4 pound pork loin, cut into thin strips, 2 tablespoons avocado or olive oil (divided), 1 tablespoon minced fresh ginger, 1 teaspoon minced garlic, 12 ounces broccoli florets, 1 red bell pepper, cut into strips, 1 bunch green onioins (scallions), cut into 2 inch pieces, 2 tablespoons Tamari soy sauce (or coconut aminos), 1 tablespoon extra dry sherry, 1 teaspoon cornstarch (or arrowroot), 1 teaspoon sesame oil</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="background">
+					
+					<img src="img/garlicprep.jpeg" class="pic">
+					<p class="recipetime">Preparation: Mince a clove of garlic. Cut a 1 inch piece of ginger and peel the thin skin with a spoon. Mince the ginger and add it to the garlic. Cut the pork loin into thin strips and mix with 1 tbsp. oil and the ginger and garlic.</p>
+				
+				</td>
+			</tr>
+			<tr>
+				<td class="background">
+					
+					<img src="img/vegetablesBeingPrepped.jpg" class="pic">
+					<p class="recipetime">Cut the red bell pepper into strips and place into the bottom of a medium bowl. Cut the green onions (scallions) into 2 inch pieces, including some of the green stems and add them to the bowl. Cut the broccoli florets into large bite sized pieces, layering them on top. </p>
+				
+				</td>
+			</tr>
+			<tr>
+				<td class="background">
+					
+					<img src="img/soysauce.jpg" class="pic">
+					<p class="recipetime">Add the sweetener and cornstarch (arrowroot) to a small bowl and mix together. Stir in the Tamari soy sauce, dry sherry and sesame oil. </p>
+				
+				</td>
+			</tr>
+			<tr>
+				<td class="background">
+					
+					<img src="img/next_photo_easy-pork-stir-fry-recipe-7-600x600.jpg" class="pic">
+					<p class="recipetime">Method: Place the wok over high heat. It's ready when a drop of water skips across the surface. Add 1 tablespoon of oil and quickly tilt the wok to coat all surfaces. Pour out the remaining oil. Place the wok back onto the heat and begin adding the pork to the sides and bottom of the pan. Leave the pork undisturbed until it has cooked half way through; the bottom half will turn white. Stir the pork and cook until it is almost cooked through. Remove from the pan to the serving bow.  </p>
+				
+				</td>
+			</tr>
+			<tr>
+				<td class="background">
+					
+					<img src="img/next_photo_easy-pork-stir-fry-recipe-7-600x600.jpg" class="pic">
+					<p class="recipetime">Dump the bowl of vegetables into the wok with the broccoli in the bottom. Cover with a lid and cook for 1 minute. Stir the vegetables and add the pork and any juices back to the pan. Stir the pork and vegetables together. Stir the stir fry sauce and pour it over the pork and vegetables. Push the pork stir fry to the sides and let the sauce boil at the bottom of the wok, stirring occasionally for several seconds until the sauce thickens.  </p>
+				
+				</td>
+			</tr>
+		</table>
+
+
+
+
+		<br> <br> <br> 
+		<div class="footer"> 		
+			<button button onclick="window.location.href='pickingredient.html'" class="footerbtn">Done</button>
+		</div>
+
+	</div>
+
+
+	
+
+  </body>
+
+
+</html>
