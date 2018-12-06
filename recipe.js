@@ -51,7 +51,7 @@ function addnewTable(){
 	            content+= `	<tr> <td class="background"> <a href="${q}">
 					<img src="img/${p}.jpg" class="pic">
 					<p class="recipename">${n}</p>
-					<p class="recipetime">takes around ${t}</p><p class="recipetime">Macro Style: ${m}</p> </a></td></tr> `
+					<p class="recipetime">takes around ${t} <br\> Macro Style: ${m}</p> </a></td></tr> `
 
 			});
 			console.log(content)
